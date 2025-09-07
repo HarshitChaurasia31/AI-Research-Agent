@@ -7,7 +7,7 @@ import io
 from fpdf import FPDF
 import markdown2
 BACKEND_URL = os.environ.get("https://backend-production-2f27.up.railway.app/", "http://localhost:8000")
-st.set_page_config(layout="wide", page_title="AI Research Agent", page_icon="🌐")
+st.set_page_config(layout="wide", page_title="Inquest", page_icon="🤖")
 
 # --- Custom CSS for background, fonts, buttons, containers ---
 st.markdown(
@@ -89,7 +89,7 @@ st.markdown(
 )
 # --- Streamlit Page Setup ---
 st.set_page_config(layout="wide")
-st.title("AI Research Agent")
+st.title("Inquest-Your go to research agent")
 st.write("Enter a research topic and get a structured report with sources and metadata.")
 
 # --- User Input ---
