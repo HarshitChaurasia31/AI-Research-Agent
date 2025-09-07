@@ -6,6 +6,7 @@ import concurrent.futures
 import io
 from fpdf import FPDF
 import markdown2
+BACKEND_URL = os.environ.get("https://backend-production-2f27.up.railway.app/", "http://localhost:8000")
 st.set_page_config(layout="wide", page_title="AI Research Agent", page_icon="🌐")
 
 # --- Custom CSS for background, fonts, buttons, containers ---
