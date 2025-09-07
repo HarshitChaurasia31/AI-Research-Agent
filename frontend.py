@@ -20,7 +20,9 @@ st.markdown(
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-
+    stMarkdown{
+        background-color: rgb(10 10 10 / 70%);
+    }
     /* Transparent containers */
     .css-1d391kg {
         background-color: rgba(0,0,0,0.6);
@@ -63,12 +65,19 @@ st.markdown(
         background-color: rgb(88 88 88);
     }
     .st-b7 {
-        background-color: transparent;
-        border: 1px solid #53b5ac;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 0px;
+        box-shadow: 20px 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(-1px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgb(74 255 198 / 30%);
+
     }
     .st-bv {
         font-weight: 700;
     }
+    
     /* Alerts */
     div.stAlert {
         border-radius: 10px;
