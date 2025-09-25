@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell - Digital Mental Health Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://images.icon-icons.com/516/PNG/512/mind_brain_icon-icons.com_51079.png"
+        type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .header-bg {
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        }
+
+        .hero-section {
+            background: url('https://img.freepik.com/free-photo/meditative-sunset-scene-by-lake_23-2151998973.jpg?t=st=1758806426~exp=1758810026~hmac=9935543a61671e06cec116a0c1434c68a4d4f410d45e014b1d44f8d6e90ce2cc&w=1480') no-repeat center center/cover;
+            filter: brightness(1.2);
+            position: relative;
+            color: white;
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary {
+            background-color: #2575fc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background-color: #6a11cb;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1rem;
+        }
+        .img{
+            width: 45px;
+            height: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-bg text-white p-4 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex gap-2 items-center rounded"><img src="https://www.shutterstock.com/image-vector/human-brain-wireframe-low-poly-600nw-1994576909.jpg" alt="" class="img rounded-lg">MindWell</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-200"><i class="fas fa-home mr-2"
+                            aria-hidden="true"></i>Home</a></li>
+                <li><a href="#features" class="hover:text-gray-200"><i class="fas fa-th-list mr-2"
+                            aria-hidden="true"></i>Features</a></li>
+                <li><a href="#resources" class="hover:text-gray-200"><i class="fas fa-book-open mr-2"
+                            aria-hidden="true"></i>Resources</a></li>
+                <li><a href="#contact" class="hover:text-gray-200"><i class="fas fa-envelope mr-2"
+                            aria-hidden="true"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content max-w-4xl mx-auto">
+            <h1 class="text-5xl font-extrabold mb-4">Your Digital Sanctuary for Mental Well-being</h1>
+            <p class="text-xl mb-8">Comprehensive psychological support and resources tailored for higher education
+                students.</p>
+            <a href="#features" class="btn-primary inline-block">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Key Features Designed for You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <div class="card reveal-card">
+                    <i class="fas fa-robot text-6xl text-blue-500 feature-icon" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">AI-guided First-Aid Support</h3>
+                    <p class="text-gray-600">Interactive chat offering immediate coping strategies and professional
+                        referrals.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-calendar-check text-6xl text-blue-500 feature-icon" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Confidential Booking System</h3>
+                    <p class="text-gray-600">Securely book appointments with on-campus counselors or helplines.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-book-reader text-6xl text-blue-500 feature-icon" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Psychoeducational Resource Hub</h3>
+                    <p class="text-gray-600">Access videos, relaxation audio, and mental wellness guides in multiple
+                        languages.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users text-6xl text-blue-500 feature-icon" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Moderated Peer Support Platform</h3>
+                    <p class="text-gray-600">Connect with trained student volunteers in a safe and supportive forum.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line text-6xl text-blue-500 feature-icon" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Admin Dashboard</h3>
+                    <p class="text-gray-600">Anonymous data analytics for authorities to recognize trends and plan
+                        interventions.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cogs text-6xl text-blue-500 feature-icon" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tailored & Open-Source</h3>
+                    <p class="text-gray-600">Institution-specific customization with regional cultural context and
+                        language support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16" style="background-color:#f0f4f8;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Empower Yourself with Our Resources</h2>
+            <p class="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">Explore a wealth of psychoeducational materials
+                designed to enhance your mental well-being and resilience.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <div class="card imageReveal">
+                    <i class="fas fa-brain text-4xl text-blue-500 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Mindfulness & Meditation</h3>
+                    <p class="text-gray-600 mb-4">Guided audio sessions to help you relax and focus.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Access Now &rarr;</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-heartbeat text-4xl text-blue-500 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Stress Management Guides</h3>
+                    <p class="text-gray-600 mb-4">Practical tips and techniques to manage academic and personal stress.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:underline">Read More &rarr;</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-lightbulb text-4xl text-blue-500 mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold mb-2">Understanding Mental Health</h3>
+                    <p class="text-gray-600 mb-4">Educational videos and articles on common mental health topics.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Learn More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">Have questions or need support? Reach out to us, and
+                we'll be happy to assist you.</p>
+            <form class="max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow-md" action="/submit-form" method="POST">
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="Your Name" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Your Email" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-6">
+                    <textarea name="message" placeholder="Your Message" rows="5" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="header-bg text-white p-8 text-center mt-12">
+        <div class="container mx-auto">
+            <p>&copy; 2025 MindWell. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-gray-200"><i class="fas fa-shield-alt mr-2" aria-hidden="true"></i>Privacy
+                    Policy</a>
+                <a href="#" class="hover:text-gray-200"><i class="fas fa-file-contract mr-2"
+                        aria-hidden="true"></i>Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
